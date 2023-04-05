@@ -7,3 +7,8 @@ var moveX = -left + right;
 var moveY = -up + down;
 x += moveX * spd;
 y += moveY * spd;
+
+if mouse_check_button_pressed(mb_left)
+{
+	create_light(mouse_x, mouse_y, 1, make_color_hsv(random(255), 255, 255), 2, 2, choose(noone, self));	
+}
